@@ -1,0 +1,142 @@
+/* ページ全体の基本設定 */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Meiryo", sans-serif;
+  color: #243632;
+  background: #f7f8f4;
+  line-height: 1.8;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 7%;
+  background: #ffffff;
+}
+
+.logo {
+  color: #174b40;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+nav a:hover,
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  padding: 85px 8%;
+  color: white;
+  background: linear-gradient(135deg, #174b40, #347a65);
+}
+
+.eyebrow,
+.section-label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.4;
+  margin: 18px 0;
+}
+
+.hero p {
+  max-width: 580px;
+}
+
+.primary-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  color: #174b40;
+  background: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content-section {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 32px;
+  background: white;
+  border-radius: 14px;
+}
+
+.section-label {
+  color: #347a65;
+}
+
+.content-section h2 {
+  line-height: 1.5;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #17624e;
+  font-weight: bold;
+}
+
+.notice {
+  padding: 12px;
+  background: #f1f4ed;
+  border-radius: 8px;
+}
+
+footer {
+  padding: 30px 7%;
+  color: #e7eee9;
+  background: #183d35;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 60px 7%;
+  }
+
+  .content-section {
+    margin: 18px 12px;
+    padding: 24px 20px;
+  }
+}
