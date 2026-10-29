@@ -140,3 +140,99 @@ footer {
     padding: 24px 20px;
   }
 }
+/* 写真ギャラリーへの案内カード */
+.photo-link-card {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #e4f1e5, #f5f8f3);
+  border: 1px solid #d3e5d5;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.photo-link-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(30, 80, 55, 0.14);
+}
+
+.photo-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px;
+  color: #20583e;
+  text-decoration: none;
+}
+
+.photo-link-content {
+  min-width: 0;
+}
+
+.photo-label {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #47835e;
+}
+
+.photo-link-content h2 {
+  margin: 10px 0;
+  font-size: 26px;
+}
+
+.photo-link-content p {
+  margin: 0 0 20px;
+  color: #526b5a;
+}
+
+.photo-link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: #286747;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.photo-link-button span {
+  font-size: 20px;
+}
+
+.photo-link-decoration {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.75);
+  transform: rotate(6deg);
+}
+
+.photo-link-decoration span {
+  font-size: 48px;
+}
+
+@media (max-width: 600px) {
+  .photo-link {
+    padding: 22px 18px;
+  }
+
+  .photo-link-content h2 {
+    font-size: 22px;
+  }
+
+  .photo-link-decoration {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+  }
+
+  .photo-link-decoration span {
+    font-size: 32px;
+  }
+}
